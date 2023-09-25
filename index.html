@@ -1,0 +1,222 @@
+
+
+<!DOCTYPE html>
+<html lang="de">
+<!--Gesamte Website mit Hilfe von https://getuikit.com/docs/ geschrieben-->
+<head>
+    <title>code & relax</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/uikit.min.js"></script>
+    <script src="https://kit.fontawesome.com/17b68243a1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div uk-sticky>
+        <nav class="uk-navbar-container uk-background-default" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="index.html" class="uk-navbar-item uk-logo uk-margin-left"><img src="assets/logo.png" alt="code and relax logo bild" width="70"></a>
+                <a href="index.html" class="uk-navbar-item uk-logo">code & relax</a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav uk-visible@m" uk-scrollspy-nav="closest: li; scroll: true">
+                    <li><a href="#entspannung"></a></li>
+                    <li><a href="vision.html">Unsere Vision</a></li>
+                    <li><a href="#sprachen">Unsere Sprachen</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="brainfuck.html">Brainfuck</a>
+                                    <li><a href="piet.html">Piet</a>
+                                    <li><a href="chef.html">Chef</a>
+                                    <li><a href="cow.html">COW</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <div class="uk-navbar-item uk-margin-right uk-visible@m">
+                    <button class="uk-button uk-button-primary rounded">Jetzt loslegen</button>
+                </div>
+                <!-- OFFCANVAS -->
+                <a class="uk-navbar-toggle uk-margin-right uk-hidden@m uk-toggle" uk-navbar-toggle-icon
+                    href="#offcanvas" uk-toggle></a>
+                <div id="offcanvas" uk-offcanvas>
+                    <div class="uk-offcanvas-bar">
+                        <ul class="uk-nav-default" uk-nav>
+                            <li class="uk-active"><a href="">Startseite</a></li>
+                            <li><a href="vision.html">Unsere Vision</a></li>
+                            <li class="uk-parent"><a href="#">Unsere Sprachen<span uk-nav-parent-icon></span></a>
+                                <ul class="uk-nav-sub">
+                                    <li><a href="brainfuck.html">Brainfuck</a>
+                                        <li><a href="piet.html">Piet</a>
+                                        <li><a href="chef.html">Chef</a>
+                                        <li><a href="cow.html">COW</a>
+                                </ul>
+                            </li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                        <button class="uk-button uk-button-default uk-margin">Jetzt loslegen</button>
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--HAUPTBILD-->
+    <div class="uk-section-default">
+        <div class="uk-section uk-background-cover" style="background-image: url(assets/codeviolett.png)">
+            <!--Quelle: https://www.techedgegroup.com/hubfs/2019%20-%20Information%20Technology/code-doctorzedge.jpg und selbst bearbeitet-->
+            <div class="uk-container uk-container-expand">
+                <div class="uk-align-left@m uk-text-left@m uk-text-center headerpadding">
+                    <h1 class="uk-heading-xlarge white">code & relax</h1>
+                    <p class="subheader uk-visible@m">esoterische Programmiersprachen <br> zum Entspannen</p>
+                    <button class="uk-button uk-button-secondary actionbutton rounded uk-visible@m">Jetzt ausprobieren</button>
+                    <p class="subheader-mobile uk-hidden@m">esoterische Programmiersprachen zum Entspannen</p>
+                    <button class="uk-button uk-button-secondary actionbutton-klein rounded uk-hidden@m">Jetzt ausprobieren</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--ERKLAERUNGS-SECTION-->
+    <div class="uk-section uk-section-default padding-unten-medium">
+        <div class="uk-container uk-container-large uk-text-center uk-text-left@m">
+            <h1 class="uk-heading-medium">Was ist eine <b>esoLang</b>?</h1>
+            <div uk-grid>
+                <div class="uk-width-3-5@m abstand">
+                    <p class="uk-text-lead">Eine esoterische Programmiersprache oder esoLang ist eine Art von
+                        Programmiersprache, die sich durch eine ungewöhnliche Syntax, Konzeption oder Zweck auszeichnet.
+                        Sie sind nicht für praktische Zwecke geeignet, doch dafür eignen sie sich perfekt zum Entspannen.</p>
+                </div>
+                <div class="uk-width-2-5@m uk-text-center" uk-scrollspy="cls:uk-animation-slide-right">
+                    <img src="assets/pietHelloWorld.gif" alt="hello world in piet bild" width="40%">
+                    <p>Hello World geschrieben in Piet</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--ENTSPANNUNGS-SECTION-->
+    <div class="uk-section uk-section-red padding-unten-medium" id="entspannung">
+        <div class="uk-container uk-container-large uk-text-center uk-text-left@m">
+            <h1 class="uk-heading-medium white">Entspannung durch esoLangs</h1>
+            <div class="uk-text-center abstand-medium" uk-grid>
+                <div class="uk-width-1-3@m">
+                    <i class="fa-solid fa-brain fa-7x white"></i>
+                    <p class="uk-text-lead white abstand-viel">Denkaufgaben bringen uns in einen hochkonzentrierten Zustand, der für den Körper entspannend ist</p>
+                </div>
+                <div class="uk-width-1-3@m">
+                    <i class="fa-solid fa-terminal fa-7x white"></i>
+                    <p class="uk-text-lead white abstand-viel">Unser eigener IDE zenCode™ wurde von Experten für deine Entspannung geschaffen. Ausgewählte Farben und Klangmuster helfen dir in einen Trance-Zustand zu kommen
+                    </p>
+                </div>
+                <div class="uk-width-1-3@m">
+                    <i class="fa-solid fa-puzzle-piece fa-7x white "></i>
+                    <p class="uk-text-lead white abstand-viel">Das Lösen der Aufgaben strengt dein Gehirn auf angenehme Weise an und lässt dich entspannen</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SPRACHEN SECTION-->
+    <div class="uk-section uk-section-default" id="sprachen">
+        <div class="uk-container uk-container-large uk-text-center uk-text-left@m">
+            <h1 class="uk-heading-medium">Unsere Sprachen</h1>
+            <div class="uk-slider-container-offset abstand" uk-slider>
+
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/brainfuck logo.png" width="1000" height="1000" alt="">
+                                    <!--Bearbeitete Version von https://i.redd.it/ysomzew1lpwz.jpg-->
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Brainfuck</h3>
+                                    <p>Der Klassiker unter den esoLangs.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/pietHelloWorld.gif" width="1000" height="1000" alt="">
+                                    <!--https://upload.wikimedia.org/wikipedia/commons/4/48/Piet_Program_Hello_World.gif-->
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Piet</h3>
+                                    <p>Code wie ein Kunstwerk.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/chef.png" width="1000" height="1000" alt=""> <!--Bearbeitete Version von https://lp2m.uma.ac.id/wp-content/uploads/2021/09/cooking1.jpg-->
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Chef</h3>
+                                    <p>Algorithmus als Kochrezept.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="assets/moo.png" width="1000" height="1000" alt=""> <!--Bearbeitete Version von https://www.collinsdictionary.com/images/full/meadow_1036335658_1000.jpg-->
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">COW</h3>
+                                    <p>Moo.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
+                        uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next
+                        uk-slider-item="next"></a>
+
+                </div>
+
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!--AUFFORDERUNG-->
+    <div class="uk-section uk-section-primary uk-preserve-color padding-unten">
+        <div class="uk-container uk-container-large uk-text-center">
+            <h1 class="uk-heading-large white">Bereit zu entspannen?</h1>
+            <button class="uk-button uk-button-secondary rounded abstand actionbutton-klein">Jetzt kostenlos
+                loslegen</button>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="uk-section uk-section-muted">
+        <div class="uk-container uk-container-xsmall uk-text-center">
+            <i class="fa-brands fa-twitter white fa-2xl uk-margin-right"></i>
+            <i class="fa-brands fa-instagram white fa-2xl uk-margin-right"></i>
+            <i class="fa-brands fa-youtube white fa-2xl uk-margin-right"></i>
+            <i class="fa-brands fa-github white fa-2xl"></i>
+            <div class="abstand">
+                <a href="impressum.html" class="yellow">Impressum</a> <br>
+                <a href="" class="yellow">Copyright</a>
+                <p>© 2023 code & relax</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

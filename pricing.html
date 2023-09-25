@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Pricing | code & relax</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/uikit.min.js"></script>
+    <script src="https://kit.fontawesome.com/17b68243a1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div uk-sticky>
+    <nav class="uk-navbar-container uk-background-default" uk-navbar>
+        <div class="uk-navbar-left">
+            <a href="index.html" class="uk-navbar-item uk-logo uk-margin-left"><img src="assets/logo.png" alt="code and relax logo bild" width="70"></a>
+            <a href="index.html" class="uk-navbar-item uk-logo">code & relax</a>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m">
+                <li><a href="vision.html">Unsere Vision</a></li>
+                <li><a href="index.html#sprachen">Unsere Sprachen</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="brainfuck.html">Brainfuck</a>
+                                <li><a href="piet.html">Piet</a>
+                                <li><a href="chef.html">Chef</a>
+                                <li><a href="cow.html">COW</a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="uk-active"><a href="">Pricing</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="uk-navbar-item uk-margin-right uk-visible@m">
+                <button class="uk-button uk-button-primary rounded">Jetzt loslegen</button>
+            </div>
+            <!-- OFFCANVAS -->
+            <a class="uk-navbar-toggle uk-margin-right uk-hidden@m uk-toggle" uk-navbar-toggle-icon href="#offcanvas"
+                uk-toggle></a>
+            <div id="offcanvas" uk-offcanvas>
+                <div class="uk-offcanvas-bar">
+                    <ul class="uk-nav-default" uk-nav>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="vision.html">Unsere Vision</a></li>
+                        <li class="uk-parent"><a href="#">Unsere Sprachen<span uk-nav-parent-icon></span></a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="brainfuck.html">Brainfuck</a>
+                                    <li><a href="piet.html">Piet</a>
+                                    <li><a href="chef.html">Chef</a>
+                                    <li><a href="cow.html">COW</a>
+                            </ul>
+                        </li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                    <button class="uk-button uk-button-default uk-margin">Jetzt loslegen</button>
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="uk-section uk-section-default padding-unten-medium">
+    <div class="uk-container uk-container-large uk-text-center">
+        <div uk-grid>
+            <div class="uk-width-1-3@m">
+                <h1 class="uk-heading-small">Plan 1</h1>
+                <div class="rounded-block-gray uk-text-left@m uk-text-lead">
+                    <p class="abstand-medium pricing-text">Zugang zu zenCode™-Basic und esoLang Puzzle</p>
+                    <button class="uk-button uk-button-gray uk-align-center rounded pricing-button">Loslegen</button>
+                </div>
+                <p class="uk-text-lead">Kostenlos</p>
+            </div>
+            <div class="uk-width-1-3@m">
+                <h1 class="uk-heading-small">Plan 2</h1>
+                <div class="rounded-block uk-text-left@m uk-text-lead">
+                    <p class="abstand-medium pricing-text">zenCode™-Advanced mit allen Sprachen und Klangwelten</p>
+                    <p class="abstand-medium pricing-text">Wöchentlich neue Puzzle</p>
+                    <button class="uk-button uk-button-secondary uk-align-center rounded pricing-button">Loslegen</button>
+                </div>
+                <p class="uk-text-lead">4,99€</p>
+            </div>
+            <div class="uk-width-1-3@m">
+                <h1 class="uk-heading-small">Plan 3</h1>
+                <div class="rounded-block uk-text-left@m uk-text-lead">
+                    <p class="abstand-medium pricing-text">Persönlicher Entspannungsplan und Beratung</p>
+                    <p class="abstand-medium pricing-text">zenCode™-Advanced mit allen Sprachen und Klangwelten</p>
+                    <p class="abstand-medium pricing-text">Wöchentlich neue Puzzle</p>
+                    <button class="uk-button uk-button-secondary uk-align-center rounded pricing-button">Loslegen</button>
+                </div>
+                <p class="uk-text-lead gray">9,99€</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--FOOTER-->
+<div class="uk-section uk-section-muted">
+        <div class="uk-container uk-container-xsmall uk-text-center">
+            <i class="fa-brands fa-twitter white fa-2xl uk-margin-right"></i>
+            <i class="fa-brands fa-instagram white fa-2xl uk-margin-right"></i>
+            <i class="fa-brands fa-youtube white fa-2xl uk-margin-right"></i>
+            <i class="fa-brands fa-github white fa-2xl"></i>
+            <div class="abstand">
+                <a href="impressum.html" class="yellow">Impressum</a> <br>
+                <a href="" class="yellow">Copyright</a>
+                <p>© 2023 code & relax</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

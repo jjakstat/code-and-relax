@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Unsere Vision | code & relax</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/uikit.min.js"></script>
+    <script src="https://kit.fontawesome.com/17b68243a1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div uk-sticky>
+    <nav class="uk-navbar-container uk-background-default" uk-navbar>
+        <div class="uk-navbar-left">
+            <a href="index.html" class="uk-navbar-item uk-logo uk-margin-left"><img src="assets/logo.png" alt="code and relax logo bild" width="70"></a>
+            <a href="index.html" class="uk-navbar-item uk-logo">code & relax</a>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m">
+                <li class="uk-active"><a href="">Unsere Vision</a></li>
+                <li><a href="index.html#sprachen">Unsere Sprachen</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="brainfuck.html">Brainfuck</a>
+                                <li><a href="piet.html">Piet</a>
+                                <li><a href="chef.html">Chef</a>
+                                <li><a href="cow.html">COW</a>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="uk-navbar-item uk-margin-right uk-visible@m">
+                <button class="uk-button uk-button-primary rounded">Jetzt loslegen</button>
+            </div>
+            <!-- OFFCANVAS -->
+            <a class="uk-navbar-toggle uk-margin-right uk-hidden@m uk-toggle" uk-navbar-toggle-icon href="#offcanvas"
+                uk-toggle></a>
+            <div id="offcanvas" uk-offcanvas>
+                <div class="uk-offcanvas-bar">
+                    <ul class="uk-nav-default" uk-nav>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li class="uk-active"><a href="">Unsere Vision</a></li>
+                        <li class="uk-parent"><a href="#">Unsere Sprachen<span uk-nav-parent-icon></span></a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="brainfuck.html">Brainfuck</a>
+                                    <li><a href="piet.html">Piet</a>
+                                    <li><a href="chef.html">Chef</a>
+                                    <li><a href="cow.html">COW</a>
+                            </ul>
+                        </li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                    <button class="uk-button uk-button-default uk-margin">Jetzt loslegen</button>
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--HEADER-->
+<div class="uk-section uk-section-secondary">
+    <div class="uk-container uk-container-large uk-text-center">
+        <h1 class="uk-heading-large">Unsere Vision</h1>
+    </div>
+</div>
+
+<!--WISSENSCHAFT-->
+<div class="uk-section uk-section-default">
+    <div class="uk-container uk-container-large uk-text-center uk-text-left@m">
+        <h1 class="uk-heading-medium">Die Wissenschaft</h1>
+        <div uk-grid>
+            <div class="uk-width-3-5@m">
+                <p class="uk-text-lead abstand">Wissenschaftlichen Erkenntnissen zufolge begibt sich das Gehirn durch die Arbeit an interessanten und fordernden Aufgaben in einen trance-artigen Zustand. Dieser sogenannte "Flowstate" wirkt sich entspannend auf den Körper und Geist aus. Durch unser Programm und unseren hauseigenen IDE möchten wir dich gezielt in diesen Zustand versetzen.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--ESOLANGS-->
+<div class="uk-section uk-section-red">
+    <div class="uk-container uk-container-large uk-text-center uk-text-right@m">
+        <h1 class="uk-heading-medium white">Warum esoLangs?</h1>
+        <div uk-grid>
+            <div class="uk-width-2-5@m">
+
+            </div>
+            <div class="uk-width-3-5@m">
+                <p class="uk-text-lead white abstand">esoLangs basieren auf unkonventionellen Ideen, die neue Denkweisen benötigen und den ganzen Prozess des Codens mehr zu einem Puzzle als zu einer simplen Problemlösung werden lassen. Ein Großteil unserer angebotenen Sprachen besitzt Konnotationen mit Kunst, Natur oder Kochen - Dinge, die sich entspannend auf dich auswirken.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--PLAN-->
+<div class="uk-section uk-section-default uk-visible@m">
+    <div class="uk-container uk-container-large uk-text-center padding-unten">
+        <h1 class="uk-heading-medium uk-text-left@m">Unser Plan für dich</h1>
+        <i class="fa-solid fa-square-check abstand fa-9x primary"></i>
+        <p class="padding-plan uk-text-lead">Zuerst wählst du deine eigenen Entspannungsziele aus und wir schlagen dir passende esoLangs vor.</p>
+        <i class="fa-solid fa-ellipsis-vertical fa-2x abstand-wenig"></i> <br>
+        <i class="fa-solid fa-book-open fa-9x abstand primary"></i>
+        <p class="padding-plan uk-text-lead">Du entscheidest dich für eine esoLang, lädst unseren kostenlosen IDE zenCode™ herunter und wir bringen dir die Grundlagen deiner esoLang bei.</p>
+        <i class="fa-solid fa-ellipsis-vertical fa-2x abstand-wenig"></i> <br>
+        <i class="fa-solid fa-mountain-sun fa-9x abstand primary"></i>
+        <p class="padding-plan uk-text-lead">Mit deinem persönlichen Plan löst du gezielt Puzzle in einer Umgebung, die für deine maximale Entspannung sorgen wird.</p>
+    </div>
+</div>
+
+<!--PLAN MOBILE-->
+<div class="uk-section uk-section-default uk-hidden@m">
+    <div class="uk-container uk-container-large uk-text-center padding-unten">
+        <h1 class="uk-heading-medium uk-text-left@m">Unser Plan für dich</h1>
+        <i class="fa-solid fa-square-check abstand fa-5x primary"></i>
+        <p class="padding-plan">Zuerst wählst du deine eigenen Entspannungsziele aus und wir schlagen dir passende esoLangs vor.</p>
+        <i class="fa-solid fa-ellipsis-vertical fa-2x abstand-wenig"></i> <br>
+        <i class="fa-solid fa-book-open fa-5x abstand primary"></i>
+        <p class="padding-plan">Du entscheidest dich für eine esoLang, lädst unseren kostenlosen IDE zenCode™ herunter und wir bringen dir die Grundlagen deiner esoLang bei.</p>
+        <i class="fa-solid fa-ellipsis-vertical fa-2x abstand-wenig"></i> <br>
+        <i class="fa-solid fa-mountain-sun fa-5x abstand primary"></i>
+        <p class="padding-plan">Mit deinem persönlichen Plan löst du gezielt Puzzle in einer Umgebung, die für deine maximale Entspannung sorgen wird.</p>
+    </div>
+</div>
+
+<!--AUFFORDERUNG-->
+<div class="uk-section uk-section-primary uk-preserve-color padding-unten">
+        <div class="uk-container uk-container-large uk-text-center">
+            <h1 class="uk-heading-medium white">Bereit zu entspannen?</h1>
+            <button class="uk-button uk-button-secondary rounded abstand actionbutton-klein">Jetzt kostenlos loslegen</button>
+        </div>
+</div>
+
+<!--FOOTER-->
+    <div class="uk-section uk-section-muted">
+        <div class="uk-container uk-container-xsmall uk-text-center">
+            <i class="fa-brands fa-twitter white fa-xl uk-margin-right"></i>
+            <i class="fa-brands fa-instagram white fa-xl uk-margin-right"></i>
+            <i class="fa-brands fa-youtube white fa-xl uk-margin-right"></i>
+            <i class="fa-brands fa-github white fa-xl"></i>
+            <div class="abstand">
+                <a href="impressum.html" class="yellow">Impressum</a> <br>
+                <a href="" class="yellow">Copyright</a>
+                <p>© 2023 code & relax</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

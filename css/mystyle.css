@@ -1,0 +1,229 @@
+/*
+Farben tetraedisches Schema:
+Primary Dunkelgruen:    #018A5A
+Secondary Violett:      #3D218A
+3 Hellgruen:            #0F8A5F
+4 Dunkelrot:            #8A1B01
+5 Gelb:                 #8A7F08
+*/
+
+/* FARBEN */
+.uk-background-default {
+    background-color: #FFFFFF !important;
+  }
+.uk-background-muted {
+    background-color: #3a3a3a !important;
+  }
+.uk-background-primary {
+    background-color: #018A5A !important;
+  }
+.uk-background-secondary {
+    background-color: #3D218A !important;
+  }
+.uk-background-red {
+    background-color: #8A1B01 !important;
+}
+.uk-background-lightgreen {
+    background-color: #0F8A5F !important;
+}
+
+.uk-button-primary {
+    background-color: #018A5A;
+    color: #fff;
+}
+  .uk-button-primary:hover {
+    background-color: #00774d;
+}
+  .uk-button-primary:active,
+  .uk-button-primary.uk-active {
+    background-color: #00774d;
+}
+.uk-button-secondary {
+    background-color: #3D218A;
+    color: #fff;
+}
+  .uk-button-secondary:hover {
+    background-color: #351d77;
+}
+  .uk-button-secondary:active,
+  .uk-button-secondary.uk-active {
+    background-color: #351d77;
+}
+
+.uk-button-gray {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+.uk-button-gray:hover {
+  background-color: #242424;
+}
+.uk-button-gray:active,
+.uk-button-gray.uk-active {
+  background-color: #242424;
+}
+
+.uk-section-default {
+  background: #fff;
+}
+
+.uk-section-muted {
+  background: #3a3a3a;
+}
+
+.uk-section-primary {
+  background: #018A5A;
+}
+
+.uk-section-secondary {
+  background: #3D218A;
+}
+
+.uk-section-red {
+  background: #8A1B01;
+}
+
+.uk-navbar-nav > li > a {
+  color: black;
+}
+
+.uk-navbar-nav > li.uk-active > a {
+  font-weight: bold;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .uk-text-lead {
+    font-size: 1.25rem;
+  }
+}
+
+
+.yellow {
+  color: #8A7F08;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.gray {
+  color: #3a3a3a;
+}
+
+.primary {
+  color: #018A5A;
+}
+.subheader {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #808080;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.subheader-mobile {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #808080;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+  
+.headerpadding {
+    padding-top: 14%;
+    padding-bottom: 5%;
+    padding-left: 3%;
+}
+
+.rounded {          /* https://www.w3schools.com/howto/howto_css_pill_button.asp */
+    border-radius: 16px;
+}
+
+.rounded-block {
+  border-radius: 45px;
+  background: #018A5A;
+  color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 8%;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 500px;
+  position: relative;
+}
+
+.rounded-block-gray {
+  border-radius: 45px;
+  background: #8d8d8d;
+  padding-top: 8%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 500px;
+  position: relative;
+}
+
+.pricing-text{
+  font-size: 1.5rem;
+}
+
+.pricing-button {                     /* https://stackoverflow.com/questions/9383163/how-do-i-position-a-div-at-the-bottom-center-of-the-screen */
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+
+  font-size: 2rem;
+  text-transform: none;
+  padding: 2% 10% 3%;
+  border-radius: 30px;
+}
+
+.text-extralarge {
+  font-size: 2rem;
+}
+
+.actionbutton {
+    font-size: 2.5rem;
+    text-transform: none;
+    padding: 1% 25% 1%;
+    border-radius: 30px;
+}
+
+.actionbutton-klein {
+  font-size: 2rem;
+  text-transform: none;
+  padding: 1% 10% 1%;
+  border-radius: 30px;
+}
+
+.abstand-wenig {
+  margin-top: 2%;
+}
+.abstand {
+  margin-top: 5%;
+}
+
+.abstand-medium {
+  margin-top: 10%;
+}
+
+.abstand-viel {
+  margin-top: 20%;
+}
+
+.padding-unten {
+  padding-bottom: 5%; 
+}
+
+.padding-unten-medium {
+  padding-bottom: 8%; 
+}
+
+.padding-plan {
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
